@@ -10,8 +10,6 @@ desktop.ini
 *.user
 *.userosscache
 *.sln.docstates
-/Microsoft.Dynamics365.UIAutomation.Enable/app.config
-appsettings.json
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -384,5 +382,3 @@ FodyWeavers.xsd
 
 # Binary files
 *.exe
-/Microsoft.Dynamics365.UIAutomation.Enable/appsettings.json
-/Microsoft.Dynamics365.UIAutomation.Enable/appsettings.json
