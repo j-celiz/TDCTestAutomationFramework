@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32804.467
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Dynamics365.UIAutomation.TDC", "Microsoft.Dynamics365.UIAutomation.TDC\Microsoft.Dynamics365.UIAutomation.TDC.csproj", "{BF2F2925-E0FE-49B6-AC5E-E0477E0502D7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1B8ADFD6-00B3-4392-8FD7-471EC47585BA} = {1B8ADFD6-00B3-4392-8FD7-471EC47585BA}
+		{49D54EB0-CF87-4781-B47A-B1736650E9A5} = {49D54EB0-CF87-4781-B47A-B1736650E9A5}
+		{6EB18B87-91FE-41C6-AD69-53A6AA1A022B} = {6EB18B87-91FE-41C6-AD69-53A6AA1A022B}
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Dynamics365.UIAutomation.Api", "Microsoft.Dynamics365.UIAutomation.Api\Microsoft.Dynamics365.UIAutomation.Api.csproj", "{6EB18B87-91FE-41C6-AD69-53A6AA1A022B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Dynamics365.UIAutomation.Api.UCI", "Microsoft.Dynamics365.UIAutomation.Api.UCI\Microsoft.Dynamics365.UIAutomation.Api.UCI.csproj", "{1B8ADFD6-00B3-4392-8FD7-471EC47585BA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Dynamics365.UIAutomation.Browser", "Microsoft.Dynamics365.UIAutomation.Browser\Microsoft.Dynamics365.UIAutomation.Browser.csproj", "{49D54EB0-CF87-4781-B47A-B1736650E9A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{48AB4C6C-D761-4FD8-8E16-ED8FA2C21EF9}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BF2F2925-E0FE-49B6-AC5E-E0477E0502D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF2F2925-E0FE-49B6-AC5E-E0477E0502D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF2F2925-E0FE-49B6-AC5E-E0477E0502D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF2F2925-E0FE-49B6-AC5E-E0477E0502D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EB18B87-91FE-41C6-AD69-53A6AA1A022B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EB18B87-91FE-41C6-AD69-53A6AA1A022B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EB18B87-91FE-41C6-AD69-53A6AA1A022B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EB18B87-91FE-41C6-AD69-53A6AA1A022B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B8ADFD6-00B3-4392-8FD7-471EC47585BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B8ADFD6-00B3-4392-8FD7-471EC47585BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B8ADFD6-00B3-4392-8FD7-471EC47585BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B8ADFD6-00B3-4392-8FD7-471EC47585BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49D54EB0-CF87-4781-B47A-B1736650E9A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49D54EB0-CF87-4781-B47A-B1736650E9A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49D54EB0-CF87-4781-B47A-B1736650E9A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49D54EB0-CF87-4781-B47A-B1736650E9A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {73818CC1-AA8A-4CF5-8DB8-1F5349C5B37B}
+	EndGlobalSection
+EndGlobal
