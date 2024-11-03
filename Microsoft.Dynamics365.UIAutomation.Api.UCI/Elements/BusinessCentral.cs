@@ -11,6 +11,9 @@ using OpenQA.Selenium;
 using Nancy;
 using OpenQA.Selenium.Support.UI;
 using static Microsoft.Dynamics365.UIAutomation.Api.UCI.AppReference.Entity;
+using System.Net.Http;
+using System.Threading.Tasks;
+using System.Linq;
 
 namespace Microsoft.Dynamics365.UIAutomation.Api.UCI
 {
@@ -20,6 +23,7 @@ namespace Microsoft.Dynamics365.UIAutomation.Api.UCI
     public class BusinessCentral : Element
     {
         private readonly WebClient _client;
+        public static HttpClient client = new HttpClient();
 
         public BusinessCentral(WebClient client) : base()
         {
@@ -1216,5 +1220,29 @@ namespace Microsoft.Dynamics365.UIAutomation.Api.UCI
 
         //============== </TEMPDEV for Assurity Cloud> ====================
 
+
+        //============== <API Testing> ====================
+        public static async Task TestAPI(string endpoint)
+        {
+          
+            var response = await client.GetAsync(endpoint);
+            response.EnsureSuccessStatusCode();
+
+            string responseBody = await response.Content.ReadAsStringAsync();
+            //Console.WriteLine("RESPONSE BODY: " + responseBody);
+            Console.WriteLine("RESPONSE STATUS CODE: " + response);
+
+            //var headerValue = response.Headers.GetValues("Custom-Header").FirstOrDefault();
+            Console.WriteLine("Response Headers:");
+            foreach (var header in response.Headers)
+            {
+                Console.WriteLine($"{header.Key}: {string.Join(", ", header.Value)}");
+            }
+        }
+
+        public static Task TestAPI()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
